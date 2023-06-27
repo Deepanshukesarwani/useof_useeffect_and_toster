@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navdiv h1{
+    text-align: center;
+    /* width: 2rem; */
+}
+.navdiv{
+    height: 2rem;
+    background-color: rgb(98, 89, 71);
+    /* background-color:red; */
+}

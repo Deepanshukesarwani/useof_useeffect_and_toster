@@ -1,0 +1,14 @@
+.cardsdiv{
+    /* background-color: rgb(48, 42, 80); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 2rem;
+    /* justify-content: center;
+    align-items: center; */
+}
+.cardswrapper{
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(48, 42, 80); */
+}

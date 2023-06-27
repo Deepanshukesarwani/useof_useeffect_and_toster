@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#grid_container{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+#grid_container button{
+    color: white;
+    width: 7rem;
+    border: 2px solid white;
+}
+.filterwrapper{
+    background-color: rgb(48, 42, 80);  
+}
