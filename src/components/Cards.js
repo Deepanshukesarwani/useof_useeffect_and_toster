@@ -1,13 +1,13 @@
 import React from 'react'
+import { useState } from 'react';
 import Card from './Card'
 import './cards.css'
 const Cards = (props) => {
     let ApiData=props.courses;
     let category=props.category;
+    const [likeded,setliked]=useState([]);
 
-    console.log(ApiData[category]);
-    console.log("printing category");
-    console.log(category);
+    //function for data passing in card
     function getdata(){
       if(category==="All")
       {
@@ -23,6 +23,12 @@ const Cards = (props) => {
         return ApiData[category];
       }
     }
+
+    //function of toaster of like course
+
+    // function tostgenerator(){
+
+    // }
   return (
     
     <div className='cardswrapper'>
@@ -30,7 +36,7 @@ const Cards = (props) => {
       {
         getdata().map((courses)=>{
             return(
-                <Card key={courses.id} courses={courses} />   
+                <Card key={courses.id} courses={courses} likeded={likeded} setliked={setliked} />   
             )
         })
       }
